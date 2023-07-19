@@ -2200,7 +2200,7 @@ cdef void init_mssql():
     if dbinit() == FAIL:
         raise MSSQLDriverException("dbinit() failed")
 
-    # dberrhandle(err_handler)
+    dberrhandle(err_handler)
     # dbmsghandle(msg_handler)
 
 init_mssql()
