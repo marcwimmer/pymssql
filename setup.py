@@ -63,7 +63,7 @@ else:
     # Force `setup_requires` stuff like Cython to be installed before proceeding
     #
     from setuptools.dist import Distribution
-    Distribution(dict(setup_requires='Cython>=0.19.1'))
+    Distribution(dict(setup_requires='Cython==0.29.35'))
 
     from Cython.Distutils import build_ext as _build_ext
 from distutils.dir_util import remove_tree
